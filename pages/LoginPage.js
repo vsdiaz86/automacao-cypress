@@ -2,7 +2,7 @@ class LoginPage {
 
 
     navigate() {
-      cy.visit('/');
+      cy.visit(`${Cypress.env('FRONT_URL')}/`);
     }
   
     fillEmail(email) {
